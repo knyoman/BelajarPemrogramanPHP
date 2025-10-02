@@ -17,4 +17,11 @@ $x++; # increment menambah 1
 $x--; # decrement mengurangi 1
 echo $x;
 
+echo "<h1>String</h1>";
+echo "<br>";
 
+$Nama = "Nyoman Kusuma ";
+echo $Nama;
+$Pesan = "Selamat Datang, $Nama ";
+echo "<br>$Pesan";
+echo "<br>" . $Nama . $Pesan;
