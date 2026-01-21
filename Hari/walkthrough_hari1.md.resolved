@@ -1,0 +1,108 @@
+# 📚 Hari 1: PHP Fundamentals - Walkthrough
+
+## ✅ Materi yang Dipelajari
+
+### Struktur File
+```
+📁 Hari1/
+├── 01_hello_world.php       → Intro PHP, echo, print
+├── 02_variabel_tipedata.php → Variabel dan tipe data
+├── 03_operator.php          → Semua jenis operator
+├── 04_struktur_kontrol.php  → if, switch, match
+├── 05_perulangan.php        → for, while, foreach
+└── 06_proyek_kalkulator.php → Proyek akhir
+```
+
+---
+
+## 📖 Ringkasan Materi
+
+### 1. Hello World & Echo
+- Tag PHP: `<?php ?>`
+- `echo` & `print` untuk output
+- Komentar: `//`, `/* */`, `/** */`
+
+### 2. Variabel & Tipe Data
+| Tipe | Contoh | Kegunaan |
+|------|--------|----------|
+| String | `"Laptop ASUS"` | Nama produk, alamat |
+| Integer | `50` | Stok, jumlah |
+| Float | `15000.99` | Harga, rating |
+| Boolean | `true/false` | Status aktif, member |
+| NULL | `null` | Nilai kosong |
+
+### 3. Operator
+- **Aritmatika**: `+`, `-`, `*`, `/`, `%`, `**`
+- **Perbandingan**: `==`, `===`, `!=`, `<`, `>`
+- **Logika**: `&&`, `||`, `!`
+- **Ternary**: `kondisi ? true : false`
+- **Null Coalescing**: `??`
+
+### 4. Struktur Kontrol
+```php
+// IF-ELSEIF-ELSE
+if ($nilai >= 90) { $grade = "A"; }
+elseif ($nilai >= 80) { $grade = "B"; }
+else { $grade = "C"; }
+
+// SWITCH
+switch ($status) {
+    case "paid": echo "Lunas"; break;
+    case "pending": echo "Menunggu"; break;
+}
+```
+
+### 5. Perulangan
+```php
+// FOR - hitungan pasti
+for ($i = 1; $i <= 10; $i++) { }
+
+// WHILE - kondisi dinamis
+while ($stok > 0) { }
+
+// FOREACH - untuk array
+foreach ($produk as $item) { }
+```
+
+---
+
+## 🔨 Proyek Akhir: Kalkulator Interaktif
+**File**: [06_proyek_kalkulator.php](file:///c:/xampp/htdocs/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/06_proyek_kalkulator.php)
+
+### Fitur:
+1. ➕ Kalkulator Dasar (Tambah, Kurang, Kali, Bagi)
+2. 🛒 Kalkulator Belanja (Diskon, PPN, Member)
+3. ⚖️ Kalkulator BMI
+4. 🌡️ Konverter Suhu
+5. ✖️ Generator Tabel Perkalian
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. Pastikan XAMPP sudah running (Apache)
+2. Buka browser
+3. Akses: `http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/`
+
+### Test Individual:
+- [01_hello_world.php](http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/01_hello_world.php)
+- [02_variabel_tipedata.php](http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/02_variabel_tipedata.php)
+- [03_operator.php](http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/03_operator.php)
+- [04_struktur_kontrol.php](http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/04_struktur_kontrol.php)
+- [05_perulangan.php](http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/05_perulangan.php)
+- [06_proyek_kalkulator.php](http://localhost/BelajarPemrogramanPHP_kelas%20Fullstack/Hari1/06_proyek_kalkulator.php)
+
+---
+
+## 📝 Latihan Mandiri
+
+1. Modifikasi kalkulator belanja dengan tier diskon berbeda
+2. Tambahkan konversi mata uang ke kalkulator
+3. Buat kalkulator cicilan dengan bunga
+4. Buat sistem grading dengan kriteria kehadiran
+
+---
+
+> [!TIP]
+> **Selanjutnya: Hari 2 - Functions & Arrays**
+> Kita akan belajar membuat fungsi custom dan mengelola data dengan array!

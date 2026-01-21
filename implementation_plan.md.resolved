@@ -1,0 +1,199 @@
+# 📚 Kurikulum Intensif PHP - 7 Hari (70 Jam)
+
+## Tujuan Pembelajaran
+Menjadikan Anda developer PHP yang mampu membangun aplikasi web profesional dengan pemahaman mendalam tentang:
+- Sintaks dan konsep dasar PHP
+- Pemrograman berorientasi objek (OOP)
+- Integrasi database MySQL
+- Keamanan aplikasi web
+- Best practices dan design patterns
+
+---
+
+## 📅 HARI 1: Fundamental PHP (10 Jam)
+
+### Sesi 1: Environment Setup & Hello World (2 jam)
+- Instalasi XAMPP/WAMP
+- Konfigurasi PHP
+- Struktur file PHP
+- Echo & Print
+
+### Sesi 2: Variabel & Tipe Data (2 jam)
+- String, Integer, Float, Boolean, Array, Object, NULL
+- Type casting
+- Konstanta
+
+### Sesi 3: Operator (2 jam)
+- Arithmetic, Assignment, Comparison, Logical, String operators
+
+### Sesi 4: Struktur Kontrol (2 jam)
+- if, else, elseif
+- switch-case
+- Ternary operator
+
+### Sesi 5: Perulangan (2 jam)
+- for, while, do-while, foreach
+- break & continue
+
+**🔨 Proyek Hari 1**: Kalkulator Interaktif
+
+---
+
+## 📅 HARI 2: Functions & Arrays (10 Jam)
+
+### Sesi 1: Built-in Functions (2 jam)
+- String functions
+- Math functions
+- Date/Time functions
+
+### Sesi 2: User-Defined Functions (3 jam)
+- Membuat function
+- Parameters & return values
+- Default parameters
+- Variable scope
+
+### Sesi 3: Arrays (3 jam)
+- Indexed arrays
+- Associative arrays
+- Multidimensional arrays
+- Array functions
+
+### Sesi 4: Praktik & Project (2 jam)
+**🔨 Proyek Hari 2**: Sistem To-Do List dengan CRUD
+
+---
+
+## 📅 HARI 3: Form Handling & Superglobals (10 Jam)
+
+### Sesi 1: HTML Forms & PHP (2 jam)
+- Form methods (GET vs POST)
+- Form action
+
+### Sesi 2: Superglobals (3 jam)
+- $_GET, $_POST, $_REQUEST
+- $_SERVER, $_FILES
+- $_SESSION, $_COOKIE
+
+### Sesi 3: Form Validation (3 jam)
+- Server-side validation
+- Sanitization
+- Filter functions
+
+### Sesi 4: Praktik (2 jam)
+**🔨 Proyek Hari 3**: Form Registrasi dengan Validasi Lengkap
+
+---
+
+## 📅 HARI 4: Database MySQL & CRUD (10 Jam)
+
+### Sesi 1: Dasar Database (2 jam)
+- Pengenalan MySQL
+- phpMyAdmin
+- SQL queries dasar
+
+### Sesi 2: Koneksi PHP-MySQL (2 jam)
+- mysqli vs PDO
+- Connection string
+- Error handling
+
+### Sesi 3: CRUD Operations (4 jam)
+- CREATE (INSERT)
+- READ (SELECT)
+- UPDATE
+- DELETE
+
+### Sesi 4: Prepared Statements (2 jam)
+- Mencegah SQL Injection
+- Binding parameters
+
+**🔨 Proyek Hari 4**: Sistem Manajemen Kontak
+
+---
+
+## 📅 HARI 5: Object-Oriented PHP (10 Jam)
+
+### Sesi 1: Class & Object (2 jam)
+- Membuat class
+- Properties & Methods
+- Constructor & Destructor
+
+### Sesi 2: Inheritance (2 jam)
+- Extends
+- Parent & Child class
+- Method overriding
+
+### Sesi 3: Encapsulation (2 jam)
+- Public, Private, Protected
+- Getters & Setters
+
+### Sesi 4: Polymorphism & Abstract (2 jam)
+- Abstract class
+- Interface
+- Traits
+
+### Sesi 5: Praktik (2 jam)
+**🔨 Proyek Hari 5**: Sistem Inventory dengan OOP
+
+---
+
+## 📅 HARI 6: Advanced PHP & Security (10 Jam)
+
+### Sesi 1: File Handling (2 jam)
+- Read, Write, Upload files
+- File permissions
+
+### Sesi 2: Error Handling (2 jam)
+- try-catch-finally
+- Custom exceptions
+- Error logging
+
+### Sesi 3: Sessions & Authentication (3 jam)
+- Session management
+- Login system
+- Password hashing
+
+### Sesi 4: Security Best Practices (3 jam)
+- XSS prevention
+- CSRF protection
+- SQL injection prevention
+
+**🔨 Proyek Hari 6**: Sistem Login & Register Aman
+
+---
+
+## 📅 HARI 7: Architecture & Final Project (10 Jam)
+
+### Sesi 1: MVC Pattern (2 jam)
+- Model, View, Controller
+- Routing dasar
+
+### Sesi 2: Composer & Autoloading (2 jam)
+- PSR-4 autoloading
+- Package management
+
+### Sesi 3: REST API Basics (2 jam)
+- JSON handling
+- HTTP methods
+- Simple API
+
+### Sesi 4: Final Project (4 jam)
+**🔨 Final Project**: Mini Blog/E-Commerce System
+
+---
+
+## 📋 Verification Plan
+
+### Automated Tests
+- Setiap hari akan ada latihan coding yang harus diselesaikan
+- Proyek harian akan diuji untuk memastikan berfungsi dengan benar
+
+### Manual Verification
+- Review kode bersama
+- Diskusi tentang best practices
+- Q&A session
+
+---
+
+> [!IMPORTANT]
+> **Apakah kurikulum ini sudah sesuai dengan harapan Anda?** 
+> Silakan review dan beri tahu jika ada topik yang ingin ditambah/dikurangi sebelum kita mulai pembelajaran.
