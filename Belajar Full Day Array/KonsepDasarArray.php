@@ -26,8 +26,4 @@ echo "<hr>";
 $buah[0] = 'durian';
 echo $buah[0];
 echo $buah[5] * 10;
-
-
-
-
 ?>
