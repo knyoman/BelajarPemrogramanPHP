@@ -173,6 +173,7 @@ echo $kalimat;
 
 echo '<p>===== Akumulasi Bertingkat (total nilai perkelas) =====</p>';
 
+// contoh 1
 
 $kelas = [
     "A" => [80, 70, 90],
@@ -184,7 +185,7 @@ $kelas = [
 ];
 
 foreach ($kelas as $namaKelas => $nilai){
-    $total = 0;
+    $total = 0; // agar memisahkan kelas a dan b
     foreach ($nilai as $i) {
         $total += $i;
         
@@ -193,10 +194,177 @@ foreach ($kelas as $namaKelas => $nilai){
     
 }
 
+// contoh 2 -> total penjualan perbulan
+
+$penjualan = [
+    'januari' => [100, 200, 120, 300],
+    'februari' => [200, 100, 125,270]
+];
+
+foreach ($penjualan as $bulan => $transaksi){
+    $total = 0;
+
+    foreach ($transaksi as $t) {
+        $total += $t;
+    }
+    echo "Total Penjualan di bulan $bulan: " .$total ."<br>";
+}
+
+// contoh 3 -> jumlah kehadiran perminggu 
+
+$kehadiran = [
+    "Minggu 1" => [1, 1, 1, 0, 1],
+    "Minggu 2" => [1, 0, 1, 1, 1]
+];
+
+foreach ($kehadiran as $minggu => $hadir){
+    $total = 0;
+    foreach ($hadir as $i) {
+        $total += $i;
+    }
+    echo "Total kehadiran di $minggu: $total <br>"; 
+}
+
+// contoh 4 -> total harga perkategori 
+
+$produk = [
+    "ATK" => [5000, 7000, 3000],
+    "Elektronik" => [150000, 250000]
+];
+
+foreach ($produk as $nama => $nilai){
+    $total = 0;
+    foreach ($nilai as $i){
+        $total += $i;
+    }
+    echo "Total harga $nama: $total <br>";
+}
+
+
+echo '<p>===== Mapping Data  (Transform) =====</p>';
+
+$produk = [
+    ["nama" => "Buku", "harga" => 12000],
+    ["nama" => "Pulpen", "harga" => 5000]
+];
+$hasil = [];
+
+foreach ($produk as $i){
+    $hasil[] = $i["nama"] . ": Rp " . $i["harga"];
+}
+
+print_r($hasil);
+
+
+echo '<p>===== Sinkronisasi Data =====</p>';
+// cek data yang belum ada
+
+//contoh 1
+
+$dataLama = ["A", "B", "C"];
+$dataBaru = ["B", "C", "D", "E", "F"];
+
+$yangBaru = [];
+
+foreach ($dataBaru as $d){
+    if (!in_array($d, $dataLama)){
+        $yangBaru[] = $d;
+    }
+}
+print_r($yangBaru);
+echo "<br>Data yang baru adalah ";
+for ($i = 0; $i < count($yangBaru); $i++){
+    echo $yangBaru[$i] ." ";
+}
+
+// contoh 2
+
+$buahLama = ["apel", "jeruk"];
+$buahBaru = ["jeruk", "mangga", "pisang", "apel"];
+$ygBaru = [];
+
+echo "<br>";
+foreach ($buahBaru as $b){
+    if (!in_array($b, $buahLama)) {
+        $ygBaru[] = $b;
+    }
+}
+print_r($ygBaru);
+
+$adaBaru =[];
+
+foreach ($buahBaru as $bb){
+    $ada = false;
+    
+    foreach ($buahLama as $bl){
+        if ($bb == $bl){
+            $ada = true;
+            break;
+        }
+    }
+
+    if (!$ada){
+        $adaBaru[] = $bb;
+    }
+}
+echo "<br>";
+print_r($adaBaru);
+
+
+//contoh 3
+
+$mahasiswaLama = ["Andi", "Budi", "Citra"];
+$mahasiswaBaru = ["Budi", "Citra", "Dewi", "Eka"];
+
+$pendaftarBaru = [];
+
+foreach ($mahasiswaBaru as $mb){
+    if (!in_array($mb, $mahasiswaLama)){
+        $pendaftarBaru[]= $mb;
+    }
+}
+
+echo "<br>";
+print_r($pendaftarBaru);
 
 
 
+echo '<p>===== Validasi Kompleks =====</p>';
+//cetak data kosong
 
+$form = [
+    "nama" => "Andi",
+    "email" => "",
+    "password" => "123456"
+];
 
+$error =[];
 
+foreach ($form as $filed => $values){
+    if (empty($values)){
+        $error[] = "$filed tidak boleh kosong" . $values;
+    }
+}
+echo "<br>";
+for ($i = 0; $i < count($error); $i++){
+    echo $error[$i];
+}
+
+//contoh 2
+
+$dataSiswa = [
+    'nama' => 'Nyoman',
+    'nim' => '231410049',
+    'jurusan' => 'sistem informasi'
+];
+
+$pesan = [];
+
+foreach ($dataSiswa as $fil => $nilai){
+    if (empty($nilai)){
+        $pesan[] = "$fil Tidak boleh kosong ";
+    }
+}
+echo "<br>";
+print_r($pesan);
 ?>
